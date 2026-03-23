@@ -1,8 +1,21 @@
 function openPage(page){
-  document.querySelector(".center").style.display="none";
-  document.querySelector(".steps").style.display="none";
+  document.getElementById("home").style.display="none";
+
+  document.querySelectorAll(".page").forEach(p=>{
+    p.classList.add("hidden");
+  });
 
   document.getElementById(page).classList.remove("hidden");
+}
+
+function goHome(){
+  document.getElementById("home").style.display="block";
+
+  document.querySelectorAll(".page").forEach(p=>{
+    p.classList.add("hidden");
+  });
+
+  document.getElementById("payment").classList.add("hidden");
 }
 
 let selectedPlan="";
@@ -26,7 +39,7 @@ function done(){
   window.location.href=`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
 }
 
-/* LIVE COUNT */
+/* LIVE COUNTER */
 setInterval(()=>{
   let num=Math.floor(Math.random()*200)+100;
   document.getElementById("liveCount").innerText=num;
