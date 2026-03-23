@@ -1,49 +1,46 @@
 body{
   margin:0;
   font-family: Arial;
-  background: linear-gradient(135deg,#1e1e2f,#3a0ca3,#f72585);
+  background: linear-gradient(135deg,#0f172a,#1e293b,#7c3aed);
   color:white;
   text-align:center;
 }
 
-/* TOP BAR */
 .topbar{
   background:black;
   padding:10px;
+  font-size:14px;
 }
 
-/* BRAND */
 .brand{
-  margin-top:20px;
-  font-size:35px;
+  margin:20px;
+  font-size:32px;
 }
 
-/* CENTER BUTTONS */
-.center{
+/* MENU */
+.menu{
   display:flex;
   flex-direction:column;
   align-items:center;
-  justify-content:center;
-  margin-top:40px;
 }
 
-.center button{
+.menu button{
   width:80%;
   max-width:300px;
   margin:10px;
   padding:15px;
-  font-size:18px;
   border:none;
   border-radius:15px;
-  background:rgba(255,255,255,0.2);
+  font-size:18px;
+  background:rgba(255,255,255,0.15);
   color:white;
 }
 
 /* STEPS */
 .steps{
-  margin-top:50px;
-  background:rgba(0,0,0,0.3);
+  margin:20px;
   padding:20px;
+  background:rgba(0,0,0,0.3);
   border-radius:15px;
 }
 
@@ -55,6 +52,7 @@ body{
   border-radius:10px;
 }
 
+/* BUTTONS */
 button{
   margin-top:10px;
   padding:8px 15px;
@@ -64,15 +62,22 @@ button{
   color:white;
 }
 
+.back{
+  background:gray;
+  margin-top:20px;
+}
+
+/* PAYMENT */
 .qr{
-  width:200px;
+  width:220px;
+  margin:20px;
 }
 
 input{
   padding:10px;
   width:80%;
-  border-radius:10px;
   border:none;
+  border-radius:10px;
   margin:10px;
 }
 
