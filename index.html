@@ -3,88 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Insta Services</title>
+<title>Reachup</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- TOP BAR -->
+<!-- TOP LIVE -->
 <div class="topbar">
-  🔴 <span id="liveCount">128</span> users watching now
+ 🔴 <span id="liveCount">150</span> users watching now
 </div>
 
-<h1 class="title">INSTA BOOST SERVICES 🚀</h1>
+<!-- BRAND -->
+<h1 class="brand">REACHUP 🚀</h1>
 
-<!-- CATEGORY -->
+<!-- CATEGORY BUTTONS -->
 <div class="categories">
-  <button onclick="showCategory('followers')">Followers</button>
-  <button onclick="showCategory('views')">Views</button>
-  <button onclick="showCategory('likes')">Likes</button>
-  <button onclick="showCategory('comments')">Comments</button>
+  <button onclick="openPage('followers')">FOLLOWERS</button>
+  <button onclick="openPage('views')">VIEWS</button>
+  <button onclick="openPage('likes')">LIKES</button>
+  <button onclick="openPage('comments')">COMMENTS</button>
 </div>
 
-<!-- FOLLOWERS -->
-<div id="followers" class="section">
+<!-- HOW TO ORDER -->
+<div class="steps">
+  <h2>How to Order</h2>
+  <p>1. Select Service</p>
+  <p>2. Scan & Pay</p>
+  <p>3. Enter Instagram ID</p>
+  <p>4. Click Payment Done</p>
+  <p>5. Send Screenshot in WhatsApp</p>
+</div>
+
+<!-- FOLLOWERS PAGE -->
+<div id="followers" class="section hidden">
   <h2>Cheap Followers</h2>
-  <div class="grid">
-    <div class="card">1K ₹100 <button onclick="buy('1K Cheap Followers ₹100')">Buy</button></div>
-    <div class="card">5K ₹450 <button onclick="buy('5K Cheap Followers ₹450')">Buy</button></div>
-    <div class="card">10K ₹800 <button onclick="buy('10K Cheap Followers ₹800')">Buy</button></div>
-    <div class="card">100K ₹4500 <button onclick="buy('100K Cheap Followers ₹4500')">Buy</button></div>
-  </div>
+  <div class="card">1K ₹100 <button onclick="buy('1K Cheap Followers ₹100')">Buy</button></div>
+  <div class="card">5K ₹450 <button onclick="buy('5K Cheap Followers ₹450')">Buy</button></div>
+  <div class="card">10K ₹800 <button onclick="buy('10K Cheap Followers ₹800')">Buy</button></div>
+  <div class="card">100K ₹4500 <button onclick="buy('100K Cheap Followers ₹4500')">Buy</button></div>
 
   <h2>Real Followers</h2>
-  <div class="grid">
-    <div class="card">1K ₹300 <button onclick="buy('1K Real Followers ₹300')">Buy</button></div>
-    <div class="card">5K ₹1400 <button onclick="buy('5K Real Followers ₹1400')">Buy</button></div>
-    <div class="card">10K ₹2500 <button onclick="buy('10K Real Followers ₹2500')">Buy</button></div>
-    <div class="card">100K ₹12000 <button onclick="buy('100K Real Followers ₹12000')">Buy</button></div>
-  </div>
+  <div class="card">1K ₹300 <button onclick="buy('1K Real Followers ₹300')">Buy</button></div>
+  <div class="card">5K ₹1400 <button onclick="buy('5K Real Followers ₹1400')">Buy</button></div>
+  <div class="card">10K ₹2500 <button onclick="buy('10K Real Followers ₹2500')">Buy</button></div>
+  <div class="card">100K ₹12000 <button onclick="buy('100K Real Followers ₹12000')">Buy</button></div>
 
   <h2>Tamil Followers</h2>
-  <div class="grid">
-    <div class="card">1K ₹450 <button onclick="buy('1K Tamil Followers ₹450')">Buy</button></div>
-    <div class="card">5K ₹2000 <button onclick="buy('5K Tamil Followers ₹2000')">Buy</button></div>
-    <div class="card">10K ₹3800 <button onclick="buy('10K Tamil Followers ₹3800')">Buy</button></div>
-  </div>
+  <div class="card">1K ₹450 <button onclick="buy('1K Tamil Followers ₹450')">Buy</button></div>
+  <div class="card">5K ₹2000 <button onclick="buy('5K Tamil Followers ₹2000')">Buy</button></div>
+  <div class="card">10K ₹3800 <button onclick="buy('10K Tamil Followers ₹3800')">Buy</button></div>
 </div>
 
 <!-- VIEWS -->
 <div id="views" class="section hidden">
-  <div class="grid">
-    <div class="card">1K ₹15 <button onclick="buy('1K Views ₹15')">Buy</button></div>
-    <div class="card">10K ₹70 <button onclick="buy('10K Views ₹70')">Buy</button></div>
-    <div class="card">50K ₹180 <button onclick="buy('50K Views ₹180')">Buy</button></div>
-    <div class="card">100K ₹299 <button onclick="buy('100K Views ₹299')">Buy</button></div>
-    <div class="card">1M ₹499 <button onclick="buy('1M Views ₹499')">Buy</button></div>
-  </div>
+  <div class="card">1K ₹15 <button onclick="buy('1K Views ₹15')">Buy</button></div>
+  <div class="card">10K ₹70 <button onclick="buy('10K Views ₹70')">Buy</button></div>
+  <div class="card">50K ₹180 <button onclick="buy('50K Views ₹180')">Buy</button></div>
+  <div class="card">100K ₹299 <button onclick="buy('100K Views ₹299')">Buy</button></div>
+  <div class="card">1M ₹499 <button onclick="buy('1M Views ₹499')">Buy</button></div>
 </div>
 
 <!-- LIKES -->
 <div id="likes" class="section hidden">
-  <div class="grid">
-    <div class="card">1K ₹50 <button onclick="buy('1K Likes ₹50')">Buy</button></div>
-    <div class="card">5K ₹180 <button onclick="buy('5K Likes ₹180')">Buy</button></div>
-    <div class="card">10K ₹300 <button onclick="buy('10K Likes ₹300')">Buy</button></div>
-    <div class="card">100K ₹2000 <button onclick="buy('100K Likes ₹2000')">Buy</button></div>
-  </div>
+  <div class="card">1K ₹50 <button onclick="buy('1K Likes ₹50')">Buy</button></div>
+  <div class="card">5K ₹180 <button onclick="buy('5K Likes ₹180')">Buy</button></div>
+  <div class="card">10K ₹300 <button onclick="buy('10K Likes ₹300')">Buy</button></div>
+  <div class="card">100K ₹2000 <button onclick="buy('100K Likes ₹2000')">Buy</button></div>
 </div>
 
 <!-- COMMENTS -->
 <div id="comments" class="section hidden">
-  <div class="grid">
-    <div class="card">1K ₹250 <button onclick="buy('1K Comments ₹250')">Buy</button></div>
-  </div>
+  <div class="card">1K ₹250 <button onclick="buy('1K Comments ₹250')">Buy</button></div>
 </div>
 
 <!-- PAYMENT -->
 <div id="payment" class="payment hidden">
   <h2>Complete Payment</h2>
-  <img src="https://i.postimg.cc/zfYTYVsX/Screenshot-20260323-194707-Upi-Links.png" class="qr">
-
+  <img src="YOUR_QR_LINK" class="qr">
   <input id="insta" placeholder="Enter Instagram ID">
-
   <button onclick="done()">Payment Done</button>
 </div>
 
