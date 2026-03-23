@@ -1,8 +1,8 @@
-function showCategory(cat){
-  document.querySelectorAll(".section").forEach(sec=>{
-    sec.classList.add("hidden");
-  });
-  document.getElementById(cat).classList.remove("hidden");
+function openPage(page){
+  document.querySelector(".steps").style.display = "none";
+  document.querySelector(".categories").style.display = "none";
+
+  document.getElementById(page).classList.remove("hidden");
 }
 
 let selectedPlan = "";
@@ -27,7 +27,8 @@ function done(){
   window.location.href = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
 }
 
+// LIVE COUNT
 setInterval(()=>{
-  let num = Math.floor(Math.random()*200)+100; // 100 - 300
+  let num = Math.floor(Math.random()*200)+100;
   document.getElementById("liveCount").innerText = num;
 },2000);
